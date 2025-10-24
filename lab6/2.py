@@ -9,5 +9,5 @@ for let in text:
     elif let.islower():
         lower += 1
 
-print("Uppercase letters:", upper)
-print("Lowercase letters:", lower)
+print(upper)
+print(lower)
