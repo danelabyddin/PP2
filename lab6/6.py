@@ -1,11 +1,14 @@
 import os
-
 path = '.'
+dirs = []
+files = []
 
-dirs = [d for d in os.listdir(path) if os.path.isdir(d)]
-files = [f for f in os.listdir(path) if os.path.isfile(f)]
+for item in os.listdir(path):
+    if os.path.isdir(item):
+        dirs.append(item)
+    else:
+        files.append(item)
 
-print("Directories:", dirs)
-print("Files:", files)
-print("All:", os.listdir(path))
-
+print(dirs)
+print(files)
+print(os.listdir(path))
