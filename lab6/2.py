@@ -1,7 +1,13 @@
-s = input()
-up = sum(1 for i in s if i.isupper())
-low = sum(1 for i in s if i.islower())
+text = input()
 
-print(up)
-print(low)
+upper = 0
+lower = 0
 
+for let in text:
+    if let.isupper():
+        upper += 1
+    elif let.islower():
+        lower += 1
+
+print("Uppercase letters:", upper)
+print("Lowercase letters:", lower)
